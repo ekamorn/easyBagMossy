@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154003141-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154003141-1');
+</script>
+
+
+
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>SIAM EASY BAGS</title>
+
+     <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+<!--   <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Prompt:400,700&display=swap&subset=thai" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body class="body">
+<section id="PRICE" style="padding-top: 25px;">
+	<div class="container">
+	<img class="img-fluid center" src="img/logo.png" style=" margin: 0 auto; text-align: center;">
+	<div class="row" style="padding-bottom: 30px;">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+<h2 style="font-weight: 600;color: #00adf1; text-align: center; padding-bottom: 50px">คำนวณราคาผ่อนกับเรา</h2>
+
+<form style="font-size: 18px;">
+  <div class="form-group">
+    <label for="Price" style="font-weight: 600;font-size:20px;">ราคาสินค้า</label>
+    <input type="number" class="form-control" style=" text-align: center; border-radius: 20px; font-size: 20px; font-weight: 600;" min="5000" max="500000" value="5000" id="productprice">
+     <small class="form-text text-muted">กรุณากรอกเฉพาะตัวเลข ราคาสินค้าที่ 5000-500000</small>
+
+
+     <div class="row pt-3">
+      <div class="col-6"><label for="Price" style="font-weight: 600;font-size:20px;">เงินดาวน์ (%)</label>
+    <input type="number" class="form-control" style=" text-align: center; border-radius: 20px; font-size: 20px; font-weight: 600;" min="10" max="50" value="10" id="downPercent">
+     <small class="form-text text-muted">กรุณากรอกเฉพาะตัวเลข 10-50 (%)</small></div>
+       <div class="col-6" style="text-align: right;">
+        <br><br>
+        <h4 id="downPrice">30000</h4> </div>
+<hr style="width: 100%; color: black; height: 1px; background-color:#333;" />
+       <div class="col-6"><h4>ยอดจัด</h4></div>
+  <div class="col-6" style="text-align: right;" ><h4 id="total">30000</h4> </div>
+
+<div class="col-6">
+  <label for="Price" style="font-weight: 600;font-size:20px;">ระยะเวลาผ่อนชำระ</label>
+    <input type="number" class="form-control" style=" text-align: center; border-radius: 20px; font-size: 20px; font-weight: 600;" min="3" max="12" value="5" id="times">
+     <small class="form-text text-muted">สูงสุด 12 งวด</small></div>
+  <div class="col-6">
+    <label for="Price" style="font-weight: 600;font-size:20px;">เรท</label>
+    <select class="browser-default custom-select" id="rates" style="border-radius: 20px;font-weight: 600;font-size:18px;">
+  <!-- <option selected>เลือกเรท</option> -->
+  <option value="1.5">1.5</option>
+    <option value="2">2.0</option>
+  <option value="2.5">2.5</option>
+</select>
+  </div>
+
+
+
+
+<hr style="width: 100%; color: black; height: 1px; background-color:#333;" />
+
+
+
+
+  <div class="col-6"><h4>ชำระงวดแรก</h4></div>
+  <div class="col-6" style="text-align: right;" ><h4 id="firstTime">30000</h4> </div>
+  <div class="col-6"><h4>งวดต่อไป</h4></div>
+  <div class="col-6" style="text-align: right;" ><h4 id="nextTime">30000</h4> </div>
+     </div>
+
+
+
+
+</div>
+ <!--  <button type="submit" class="btn btn-info btn-lg" style="border-radius: 30px;">คำนวณ</button> -->
+</form>
+</div>
+<div class="col-md-3"></div>
+</div>
+<div class="row" style="text-align: center;">
+
+
+
+
+
+
+
+
+<div class="col-md-4"></div>
+                                    <div class="col-md-4">
+																			<button type="button" class="btn btn-SEB btn-lg" id="cal-btn" name="button">คำนวน</button>
+                                       <a href="index.html"> <button type="button" class="btn btn-SEB btn-lg" style="margin-top: 5px; font-size: 18px;">กลับสู่หน้าหลัก</button>
+</a>
+
+
+
+<a href="https://line.me/R/ti/p/@siameasybags"> <button type="button" class="btn btn-LINE btn-lg" style="margin-top: 20px; font-size: 18px; background-color: #00c100; border-radius: 30px;">สอบถามเพิ่มเติม Add Line</button>
+</a>
+
+
+                                    </div>
+
+
+
+
+
+                                     <div class="col-md-4"></div>
+
+
+
+</div>
+
+</div>
+</section>
+
+
+
+
+<!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/stellar.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+
+		<!-- Calculate JS -->
+		<!-- <script src="js/calculator2.js" type="module"></script> -->
+		<script type="module">
+		const productPrice = `#productprice`;
+		const downPercent = `#downPercent`;
+		const downPrice = `#downPrice`;
+		const total = `#total`;
+		const times = `#times`;
+		const rates = `#rates`;
+		const firstTime = `#firstTime`;
+		const nextTime = `#nextTime`;
+		const calBtn = `#cal-btn`;
+
+		const leastPrice = 5000;
+		const maxPrice = 500000;
+
+
+		// First orders
+		firstOrder();
+
+
+
+		$(calBtn).on('click', function(e) {
+
+			let priceValue = $(productPrice).val();
+			let downValue = $(downPercent).val();
+			let period = $(times).val();
+			let rate = $(rates).val();
+
+
+			if (priceValue < leastPrice || priceValue > maxPrice)
+			{
+				alert(`โปรดกรอกราคาสินค้าในช่วงราคาที่เรากำหนด`);
+			}
+			else if (downValue < 10 || downValue > 50)
+			{
+				alert(`โปรดกรอกจำนวนเงินดาว์นให้อยู่ในช่วงที่เรากำหนด`);
+			}
+			else if (period <= 0 || period > 12)
+			{
+				alert(`โปรดกรอกจำนวนงวดผ่อนชำระให้อยู่ในช่วงที่เรากำหนด`);
+			}
+			else
+			{
+				const datas = calculate(priceValue, downValue, period, rate);
+				const down = datas[0];
+				const totalData = datas[1];
+				const eachPeriod = datas[2];
+				const firstPeriod = datas[3];
+
+				$(downPrice).html(down);
+				$(total).html(totalData);
+				$(nextTime).html(eachPeriod);
+				$(firstTime).html(firstPeriod);
+			}
+
+			e.preventDefault();
+		});
+
+
+		export function checkLeastPrice (price)
+		{
+			if (price < 5000)
+			{
+					price = leastPrice;
+			}
+			else if (price >= maxPrice)
+			{
+				price = maxPrice;
+			}
+
+			return price;
+		}
+
+
+
+		export function calculate(price, downValue, periods, rate)
+		{
+			const downPrice = Math.round((downValue / 100)*price);
+			const total = price - downPrice;
+			const normalPeriod = Math.round((total / periods) + ((total * rate)/100));
+			const firstPeriod = normalPeriod + downPrice;
+
+			const data = [
+				downPrice,
+				total,
+				normalPeriod,
+				firstPeriod
+			];
+			return data;
+		}
+
+
+
+
+		// First order
+		function firstOrder()
+		{
+			let priceValue = $(productPrice).val();
+			let downValue = $(downPercent).val();
+			let period = $(times).val();
+			let rate = $(rates).val();
+
+			const datas = calculate(priceValue, downValue, period, rate);
+			const down = datas[0];
+			const totalData = datas[1];
+			const eachPeriod = datas[2];
+			const firstPeriod = datas[3];
+
+			$(downPrice).html(down);
+			$(total).html(totalData);
+			$(nextTime).html(eachPeriod);
+			$(firstTime).html(firstPeriod);
+		}
+
+		</script>
+</body>
+</html>
