@@ -14,7 +14,7 @@
 
 
 
-	
+
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -245,7 +245,10 @@
 		{
 			const downPrice = Math.round((downValue / 100)*price);
 			const total = price - downPrice;
-			const normalPeriod = Math.round((total / periods) + ((total * rate)/100));
+      let increaseRate = Math.round((total * rate)/100);
+      if (increaseRate < 500)
+        increaseRate = 500
+			const normalPeriod = Math.round((total / periods) + increaseRate);
 			const firstPeriod = normalPeriod + downPrice;
 
 			const data = [
